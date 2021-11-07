@@ -1,13 +1,164 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+  *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+  
+  }
+  .main_container{
+    height: 100vh;
+    /* justify-content: center;
+    text-align: center; */
+  
+    
+    background: url("../src/images/screen.jpg") no-repeat center center / cover;
+  }
+ 
+.container{
+ width: 100vw;
+ height: 30vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  
+}
+.box_todo{
+  width: 20vw;
+  height:12vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: rgba(245, 241, 241, 0.102);
+  border-radius: 10px;
+  border-top: 1px solid rgba(255, 255, 255,.3);
+  border-left: 1px solid rgba(255, 255, 255,.3);
+  backdrop-filter: blur(120px);
+ position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.box_todo_content{
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+ 
+  font-size: 20px;
+  margin-top: 10px;
+  color: #ffff;
+}
+.containers{
+  width: 100vw;
+  display: flex; 
+  display: grid;
+  grid-template-columns: repeat(4,2fr);
+  flex-wrap: wrap;
+  
+}
+.box{
+display: inline-block;
+  width: 20vw;
+  height:13vw;
+  margin: 12px 12px;
+  line-height: 18px;
+  background: rgba(245, 241, 241, 0.102);
+  border-radius: 10px;
+  border-top: 1px solid rgba(255, 255, 255,.3);
+  border-left: 1px solid rgba(255, 255, 255,.3);
+  backdrop-filter: blur(120px);
+ position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.box_content{
+  margin: 5px 5px;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #ffff;
+}
+
+.box_todo input{
+ border-radius: 10px;
+ padding: 5px;
+ outline: none;
+ border: none;
+}
+.box-todo h1{
+  font-weight: 900;
+}
+.btns{
+  background-color: transparent;
+  border-radius: 10px;
+  color:#fff;
+   border: 1px solid #ffff;
+   padding:10px 10px;
+   font-weight:600;
+}
+.btns:hover{
+  background-color:#ffff;
+  color:black;
+   transition:0.6s;
+}
+.todo_content{
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+    
+}
+
+.todo_content table{
+      width: 31vw;
+      line-height: 33px;
+      color: #ffff;
+      font-size: 20px;
+}
+
+.todo_content tbody button{
+  padding: 6px 13px;
+  border-radius:4px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #ffff;
+  color: #ffff;
+  outline: none;
+  font-weight: 600;
+
+}
+.todo_content tbody button:hover{
+  background-color: #ffff;
+  color: #000;
+  transition: 0.5s;
+}
+.todo_content tbody tr td{
+  line-height: 2.5rem;
+}
+
+.box_user{
+  width: 30vw;
+  height: 30vh;
+  margin-left: 34rem;
+  border-radius: 5px;
+  background: rgba(245, 241, 241, 0.102);
+  border-radius: 10px;
+  border-top: 1px solid rgba(255, 255, 255,.3);
+  border-left: 1px solid rgba(255, 255, 255,.3);
+  backdrop-filter: blur(10px);
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  color: #ffff;
+  
+}
+
+.box_user p{
+  margin: 7px 9px;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 3rem;
+  
+}
+.icon{
+  position: relative;
+  left:   15rem;
+  bottom: 5px;
 }
